@@ -827,7 +827,21 @@
        #define BTN_EN1 16
        #define BTN_EN2 17
        #define BTN_ENC 23 //the click
+      #elif MB(AZTEEG_X3_PRO) && defined(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
+        #define LCD_PINS_RS 12
+        #define LCD_PINS_ENABLE 47
+        #define LCD_PINS_D4 39
+        #define LCD_PINS_D5 31
+        #define LCD_PINS_D6 32
+        #define LCD_PINS_D7 35
 
+       //buttons
+       #define BTN_EN1 7
+       #define BTN_EN2 22
+       #define BTN_ENC 45 //the click
+
+       #define KILL_PIN 44
+      #endif
     #endif
     #else //old style panel with shift register
       //arduino pin witch triggers an piezzo beeper
