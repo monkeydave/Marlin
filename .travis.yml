@@ -159,4 +159,4 @@ script:
   - rm -rf .build/
   - ino build -m atmega328
 after_failure:
-  - cat $TRAVIS_TEST_RESULT
+  - echo $TRAVIS_TEST_RESULT
